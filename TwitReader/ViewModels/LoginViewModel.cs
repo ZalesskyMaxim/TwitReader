@@ -6,13 +6,12 @@ namespace TwitReader.ViewModels
     public class LoginViewModel : ViewModelBase
     {
         private string _userName;
-        private string _password;
-        public string UserName 
+        public string UserName
         {
             get { return _userName; }
-            set 
+            set
             {
-                if (_userName != value) 
+                if (_userName != value)
                 {
                     _userName = value;
                     OnPropertyChanged(nameof(UserName));
@@ -20,6 +19,8 @@ namespace TwitReader.ViewModels
             }
         }
 
+
+		private string _password;
         public string Password
         {
             get { return _password; }

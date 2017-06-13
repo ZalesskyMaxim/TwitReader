@@ -1,10 +1,11 @@
-﻿<Properties StartupConfiguration="{CF4732D3-1239-48BF-9326-2733FDD8C29E}|Default">
+﻿<Properties StartupConfiguration="{3BB38E10-70E1-42D2-BD57-5FC19D5E058F}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="TwitReader/ViewModels/LoginViewModel.cs">
     <Files>
-      <File FileName="TwitReader/TwitReader.cs" Line="25" Column="13" />
-      <File FileName="TwitReader/Views/LoginPage.cs" Line="14" Column="55" />
+      <File FileName="TwitReader/TwitReader.cs" Line="12" Column="13" />
+      <File FileName="TwitReader/Views/LoginPage.cs" Line="15" Column="13" />
       <File FileName="TwitReader/Views/Base/BasePage.cs" Line="1" Column="1" />
-      <File FileName="TwitReader/ViewModels/LoginViewModel.cs" Line="4" Column="37" />
+      <File FileName="TwitReader/ViewModels/LoginViewModel.cs" Line="34" Column="9" />
+      <File FileName="TwitReader/ViewModels/Base/ViewModelBase.cs" Line="6" Column="65" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,5 +14,6 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.TwitReader.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.33D8A971-522A-488F-B70E-DE870BE9B951" />
+  <MonoDevelop.Ide.ItemProperties.TwitReader.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MultiItemStartupConfigurations />
 </Properties>

@@ -6,9 +6,13 @@ namespace TwitReader.View
 {
     public class LoginPage : ContentPage
     {
+        readonly LoginViewModel _viewModel;
+
         public LoginPage()
         {
-            BindingContext = new LoginViewModel();
+            _viewModel = new LoginViewModel();
+            BindingContext = _viewModel;
+
             Entry userNameEntry = new Entry { Placeholder = "Username" };
             userNameEntry.SetBinding(Entry.TextProperty, nameof(LoginViewModel.UserName));
             Entry passEntry = new Entry { Placeholder = "Password", IsPassword = true};
