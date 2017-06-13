@@ -1,5 +1,12 @@
 ﻿<Properties StartupConfiguration="{CF4732D3-1239-48BF-9326-2733FDD8C29E}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TwitReader/ViewModels/LoginViewModel.cs">
+    <Files>
+      <File FileName="TwitReader/TwitReader.cs" Line="25" Column="13" />
+      <File FileName="TwitReader/Views/LoginPage.cs" Line="14" Column="55" />
+      <File FileName="TwitReader/Views/Base/BasePage.cs" Line="1" Column="1" />
+      <File FileName="TwitReader/ViewModels/LoginViewModel.cs" Line="4" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
