@@ -18,6 +18,8 @@ namespace TwitReader.View
             Entry passEntry = new Entry { Placeholder = "Password", IsPassword = true};
             passEntry.SetBinding(Entry.TextProperty, nameof(LoginViewModel.Password));
             Button loginButton = new Button { Text = "Login"};
+            Button loginToTwitter = new Button() { Text = "Login to Twitter" }; 
+            loginToTwitter.SetBinding(Button.CommandProperty, nameof(LoginViewModel.LoginToTwitterCommand));
             Content = new StackLayout
             {
                 Children = {
@@ -29,7 +31,8 @@ namespace TwitReader.View
                     },
                     userNameEntry,
                     passEntry, 
-                    loginButton
+                    loginButton,
+                    loginToTwitter
                 }
             };
         }

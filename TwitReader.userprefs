@@ -1,16 +1,24 @@
-﻿<Properties StartupConfiguration="{3BB38E10-70E1-42D2-BD57-5FC19D5E058F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TwitReader/ViewModels/LoginViewModel.cs">
+﻿<Properties StartupConfiguration="{3BB38E10-70E1-42D2-BD57-5FC19D5E058F}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/IosTwitterLogin.cs">
     <Files>
       <File FileName="TwitReader/TwitReader.cs" Line="12" Column="13" />
-      <File FileName="TwitReader/Views/LoginPage.cs" Line="15" Column="13" />
+      <File FileName="TwitReader/Views/LoginPage.cs" Line="33" Column="32" />
       <File FileName="TwitReader/Views/Base/BasePage.cs" Line="1" Column="1" />
-      <File FileName="TwitReader/ViewModels/LoginViewModel.cs" Line="34" Column="9" />
+      <File FileName="TwitReader/ViewModels/LoginViewModel.cs" Line="48" Column="38" />
       <File FileName="TwitReader/ViewModels/Base/ViewModelBase.cs" Line="6" Column="65" />
+      <File FileName="TwitReader/AppConfig.cs" Line="6" Column="39" />
+      <File FileName="iOS/AppDelegate.cs" Line="27" Column="1" />
+      <File FileName="iOS/IosTwitterLogin.cs" Line="13" Column="38" />
+      <File FileName="TwitReader/ITwitterLoginUi.cs" Line="11" Column="1" />
+      <File FileName="Droid/AndroidTwitterLogin.cs" Line="5" Column="21" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/maksim.zaleski/Projects/TwitReader/TwitReader/ViewModels/LoginViewModel.cs" relfile="TwitReader/ViewModels/LoginViewModel.cs" line="56" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.TwitReader.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.33D8A971-522A-488F-B70E-DE870BE9B951" />
