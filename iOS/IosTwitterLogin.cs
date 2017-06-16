@@ -10,8 +10,11 @@ namespace TwitReader.iOS
     {
         public void DisplayUI(OAuth1Authenticator authenticator)
         {
-            var ui = authenticator.GetUI();
-            (UIApplication.SharedApplication.Delegate as AppDelegate).window.RootViewController.PresentViewController(ui, true, null);
+            UIKit.UIViewController ui = authenticator.GetUI();
+			//UIApplication.SharedApplication.Delegate.GetWindow().RootViewController.PresentViewController(ui, true, null);
+			//(UIApplication.SharedApplication.Delegate as AppDelegate).window.RootViewController.PresentViewController(ui, true, null);
+            (UIApplication.SharedApplication.Delegate as AppDelegate).GetWindow().RootViewController.PresentViewController(ui, true, null);
+			
         }
     }
 }

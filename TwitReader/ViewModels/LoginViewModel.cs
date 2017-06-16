@@ -43,19 +43,30 @@ namespace TwitReader.ViewModels
         }
 
         Account loggedInAccount;
+        private bool _isAuhtenticated;
         private void ExecuteLoginToTwitterCommand()
         {
-            var auth = new OAuth1Authenticator(consumerKey: AppConfig.ConsumerKey,
-                                               consumerSecret: AppConfig.ConsumerSecretKey,
-                                               requestTokenUrl: AppConfig.RequestTokenUrl,
-                                               authorizeUrl: AppConfig.AuthorizeUrl,
-                                               accessTokenUrl: AppConfig.AccessTokenUrl,
-                                               callbackUrl: AppConfig.CallbackUrl
-                                              );
+			//var auth = new OAuth1Authenticator(consumerKey: AppConfig.ConsumerKey,
+			//consumerSecret: AppConfig.ConsumerSecretKey,
+			//requestTokenUrl: AppConfig.RequestTokenUrl,
+			//authorizeUrl: AppConfig.AuthorizeUrl,
+			//accessTokenUrl: AppConfig.AccessTokenUrl,
+			//callbackUrl: AppConfig.CallbackUrl
+			//);
+
+            var auth = new OAuth2Authenticator()(
+					consumerKey: "C9iv9Cwq0lrH02qdOk5BTtNYv",
+				 consumerSecret: "u4PRH3RSxsSYozWMGPbS809MbZmznxr7k493fW0vjxeJ6q18V9",
+				  requestTokenUrl: new Uri("https://api.twitter.com/oauth/request_token"),
+				   authorizeUrl: new Uri("https://api.twitter.com/oauth/authorize"),
+				  accessTokenUrl: new Uri("https://api.twitter.com/oauth/access_token"),
+				 callbackUrl: new Uri("https://mobile.twitter.com/"));
+
 
 			auth.Completed += (s, eventArgs) =>
             {
-	            if (eventArgs.IsAuthenticated)
+                _isAuhtenticated = eventArgs.IsAuthenticated;
+                if (_isAuhtenticated)
 	            {
 					//btnPost.Enabled = true;
 					//btnSearch.Enabled = true;
@@ -71,18 +82,7 @@ namespace TwitReader.ViewModels
 
 			//PresentViewController(ui, true, null);
 
-            var request = new OAuth1Request("GET",
-											new Uri("https://api.twitter.com/1.1/account/verify_credentials.json "),
-	                                        null,
-	                                        loggedInAccount
-                                           );
-            //var ui = auth.GetUI(this);
             DependencyService.Get<ITwitterLoginUi>().DisplayUI(auth);
-            auth.Completed += (sender, e) => 
-            {
-                
-            };
-
         }
     }
 }

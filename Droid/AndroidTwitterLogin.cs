@@ -17,7 +17,7 @@ namespace TwitReader.Droid
     {
         public void DisplayUI(OAuth1Authenticator authenticator)
         {
-            var ui = authenticator.GetUI(Android.App.Application.Context.ApplicationContext);
+            global::Android.Content.Intent ui = authenticator.GetUI(Android.App.Application.Context.ApplicationContext);
             //var activity = Forms.Context as Activity;
             //activity.StartActivityForResult(ui, -1);
             ((Activity)Forms.Context).StartActivityForResult(ui, -1);
